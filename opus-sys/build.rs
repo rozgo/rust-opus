@@ -57,8 +57,8 @@ fn inform_cargo(out_dir: &Path) {
 }
 
 fn success_or_panic(cmd: &mut Command) {
-    match cmd.status() {
-        Ok(status) => if !status.success() { panic!("command exited with failure") },
+    match cmd.output() {
+        Ok(output) => if !output.status.success() { panic!("command exited with failure") },
         Err(e)     => panic!("{}", e),
     }
 }
