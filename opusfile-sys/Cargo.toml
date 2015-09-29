@@ -1,6 +1,6 @@
 [package]
 name = "opusfile-sys"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Tero Hänninen <lgvz@users.noreply.github.com>"]
 description = "Bindings to libopusfile"
 license = "MIT"
