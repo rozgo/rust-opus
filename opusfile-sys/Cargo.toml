@@ -5,6 +5,7 @@ authors = ["Tero Hänninen <lgvz@users.noreply.github.com>"]
 description = "Bindings to libopusfile"
 license = "MIT"
 keywords = ["bindings", "opusfile"]
+repository = "https://github.com/lgvz/rust-opus"
 links = "opusfile"
 build = "build.rs"
 
