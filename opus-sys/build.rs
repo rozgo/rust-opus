@@ -66,10 +66,10 @@ fn inform_cargo(out_dir: &Path) {
 fn success_or_panic(cmd: &mut Command) {
     match cmd.output() {
         Ok(output) => if !output.status.success() {
-			panic!("command exited with failure\n=== Stdout ===\n{}\n=== Stderr ===\n{}",
-				String::from_utf8_lossy(&output.stdout),
-				String::from_utf8_lossy(&output.stderr))
-		},
+            panic!("command exited with failure\n=== Stdout ===\n{}\n=== Stderr ===\n{}",
+                String::from_utf8_lossy(&output.stdout),
+                String::from_utf8_lossy(&output.stderr))
+        },
         Err(e)     => panic!("{}", e),
     }
 }
