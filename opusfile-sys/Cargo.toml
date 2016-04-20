@@ -11,8 +11,8 @@ build = "build.rs"
 
 [dependencies]
 libc = "0.2"
-ogg-sys = "*"
-opus-sys = "*"
+ogg-sys = "0.0.9"
+opus-sys = "0.2"
 
 [build-dependencies]
-pkg-config = "*"
+pkg-config = "0.3.8"

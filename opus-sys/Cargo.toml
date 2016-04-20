@@ -13,4 +13,4 @@ build = "build.rs"
 libc = "0.2"
 
 [build-dependencies]
-pkg-config = "*"
+pkg-config = "0.3.8"
