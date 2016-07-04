@@ -52,7 +52,6 @@ pub const OPUS_ALLOC_FAIL       : i32 = -7;
 
 // -------------------------------------------
 
-#[link(name = "opus")]
 extern "C" {
     pub fn opus_strerror(error: ::libc::c_int) -> *const ::libc::c_char;
     pub fn opus_get_version_string() -> *const ::libc::c_char;
