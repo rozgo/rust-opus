@@ -252,3 +252,23 @@ extern "C" {
      -> ::libc::c_int;
     pub fn opus_multistream_decoder_destroy(st: *mut OpusMSDecoder) -> ();
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_opus_get_version_string() {
+        unsafe { println!("opus_get_version_string: {:?}", opus_get_version_string()); }
+        // assert!(false);
+    }
+
+    #[test]
+    fn test_opus_encoder_create() {
+        unsafe {
+            let error = 0 as *mut ::libc::c_int;
+            let encoder = opus_encoder_create(48000, 2, 0, error);
+            println!("opus_encoder_create: {:?} {:?}", error, encoder);
+        }
+    }
+}
